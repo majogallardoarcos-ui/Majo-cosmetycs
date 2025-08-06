@@ -1,0 +1,64 @@
+.cab_img
+{
+    width: 100%;
+    height: 200px;
+}
+.menuprimario /* Estructura principal*/
+{
+    background-color: lab(76.09% 20.75 34.48); /*Este es el color de relleno*/
+    width: 100%; /*esta propiedad define el ancho del menu*/
+    margin: 4px 4px;
+    display: inline-block; /*Sirve para colocar bloques en linea*/
+}
+.menuprimario ul
+{
+    display: flex;
+    justify-content: center;
+    padding: 4px 4px;
+    font-size: 13pt;
+    margin: 0;
+    list-style: none;
+
+}
+.menuprimario li a:hover, .menuprimario:focus
+{
+    background-color: azure;
+    color: beige;
+    transform: scale(1.05);
+    align-items: center;   
+}
+.foco.activo
+{
+    background-color: blanchedalmond;
+    color: black;
+    font-weight: bold;
+    border-left: 5px solid cornsilk;
+} 
+.Botones
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*Le agrega el tipo de letra*/
+    font-size: 14pt; /*Le agrega aumento a las letras*/
+    list-style: none; /*Le quita el estilo de lista*/
+    text-align: center; /*Sirve para alinear los botones a la derecha, centro o izquierda*/
+    padding: 10px 10px; /*Sirve para el espaciado entre los botones*/
+    position: relative;
+}
+.Botones li
+{
+    display: inline-block; /*Menú en linea horizontal*/
+    position: relative;
+}
+.Botones li > a /* Esta propiedad de aqui la empleo para quitar el hipervinculo*/
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 10px;
+}
+.Botones li > a:hover /*Esta propiedad es para cuando el puntero se posiciona en el menú*/
+{
+    background-color: rgba(255, 255, 255, 0.521);
+    color: black;
+    padding: 10px;
+}
+
