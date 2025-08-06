@@ -1,0 +1,52 @@
+.Banner
+{
+background-color: rgb(248, 166, 99);
+width: 100%;
+height: 550px;
+background-image: url(../imagenes/Cabecera/cabecera-Spa.jpg);
+background-position: justify;
+background-size: contain;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+position: relative;
+display: flex;
+}
+.Banner::before
+{
+   content: "";/*creamos una mascara vacia*/
+   position: absolute; /*Se le pone posicion absoluta para que ese relleno se quede pegado a la imagen*/
+   background-color: rgba(248, 177, 110, 0.87);
+   top: 0; /*Son las propiedades de partida de la esquina de la imagen*/
+   left: 0; /*Son las propiedades de partida de la esquina de la imagen*/
+   width: 100%;
+   height: 100%;
+}
+.Bannercontent
+{
+    z-index: 5; /*Esta es la profundidad*/
+    position: relative;
+    max-width: 800px;
+}
+.Bannercontent h1
+{
+    color: rgb(7, 7, 7);
+    font-size: 35pt;
+    font-weight: bold;
+    margin-bottom: 18pt;
+}
+.Bannercontent
+{
+    color: black;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 18pt;    
+}
+.Bannercontent button
+{
+    background-color: rgba(248, 106, 11, 0.425);
+    color: white;
+    font-size: 20pt;
+    border-radius: 10%;
+}
